@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useCallback } from 'react';
+import { Button } from "@/components/ui/button"
 import {
   ReactFlow,
   Controls,
@@ -22,12 +23,7 @@ const initialNodes: Node[] = [
     data: { label: 'Hello' },
     position: { x: 0, y: 0 },
     type: 'input',
-  },
-  {
-    id: '2',
-    data: { label: 'World' },
-    position: { x: 100, y: 100 },
-  },
+  }
 ];
 
 const initialEdges: Edge[] = [];
@@ -68,9 +64,9 @@ export function Playground() {
   return (
     <div style={{ width: '1500px', height: '100vh' }} className="ml-86">
       <div className="absolute top-20 left-25">
-      <button onClick={handleAddNode} className="bg-blue-600 text-white px-4 py-2 rounded shadow cursor-pointer">
+      <Button variant='outline' onClick={handleAddNode} className="border-2 border-zinc-950 px-4 py-2 rounded shadow cursor-pointer">
         New Node
-      </button>
+      </Button>
     </div>
 
     <ReactFlow

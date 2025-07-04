@@ -7,7 +7,5 @@ export function Sidebar() {
         <div className="pt-2 pl-20">
             <Button size='lg' variant="default" className="cursor-pointer text-lg">Save changes</Button>
         </div>
-        
-        sidebar
     </div>
 }
