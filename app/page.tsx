@@ -1,7 +1,11 @@
+import { Playground } from "@/components/playground";
+import { Sidebar } from "@/components/sidebar";
+
 export default function Home() {
   return (
     <div>
-      hi
+      <Sidebar />
+      <Playground />
     </div>
   )
 }
